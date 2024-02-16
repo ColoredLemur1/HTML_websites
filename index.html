@@ -5,23 +5,42 @@
         <meta name = "viewport" content="width=device-width,
         initial-scale=1.0">
         <meta http-equiv="X-UA Compatible" content="ie=edge">
+        <script src="script.js" defer></script>
+        <link href="styles.css" rel="stylesheet">
         <title>Tabs</title>
 
     </head>
     <body>
-        <ul>
-            <li>Home</li>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-            <li>four</li>
+        <ul class="tabs">
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#basic" class="tab">Basic</li>
+            <li data-tab-target="#css" class="tab">CSS</li>
+            <li data-tab-target="#syntaxes" class="tab">Syntaxes</li>
+            <li data-tab-target="#javascript" class="tab">JavaScript</li>
         </ul>
 
         <div class="tab-content">
-            <div id="Home">
+            <div id="home" data-tab-content class="active">
                 <h1>Home</h1>
                 <p>hello world</p>
             </div>
+            <div id="basic" data-tab-content>
+                <h1>Basic</h1>
+                <p>hello world</p>
+            </div>
+            <div id="css" data-tab-content>
+                <h1>CSS</h1>
+                <p>hello world</p>
+            </div>
+            <div id="syntaxes" data-tab-content>
+                <h1>Syntaxes</h1>
+                <p>hello world</p>
+            </div>
+            <div id="javascript" data-tab-content>
+                <h1>JavaScript</h1>
+                <p>hello world</p>
+            </div>
+
 
         </div>
     </body>
