@@ -5,18 +5,17 @@
     <meta name = "viewport" content="width=device-width,
     initial-scale=1.0">
     <meta http-equiv="X-UA Compatible" content="ie=edge">
-    <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
     <title>Coursework</title>
 
 </head>
 <body>
     <ul class="tabs">
-        <li data-tab-target="#home" class="active tab">Home</li>
-        <li data-tab-target="#HTML_1" class="tab">HTML 1</li>
-        <li data-tab-target="#css" class="tab">CSS</li>
-        <li data-tab-target="#HTML_2" class="tab">HTML 2</li>
-        <li data-tab-target="#javascript" class="tab">JS</li>
+        <a href="index.html"> <li data-tab-target="#home" class="active tab">Home</li></a>
+        <a href="page1.html"><li data-tab-target="#HTML_1" class="tab">HTML 1</li></a>
+        <a href="page2.html"><li data-tab-target="#css" class="tab">CSS</li></a>
+        <a href="page3.html"><li data-tab-target="#HTML_2" class="tab">HTML 2</li></a>
+        <a href="page4.html"><li data-tab-target="#javascript" class="tab">JS</li></a>
     </ul>
     <div class="tab-content">
         <div id="home" data-tab-content class="active">
@@ -58,92 +57,6 @@
             <h2>for more information, please visit w3schools and look at their related sections:</h2>
             <a href="https://www.w3schools.com/" style="font-size: 160%;">w3schools.com</a>
         </div>
-        <div id="HTML_1" data-tab-content>
-            <h1>This sector covers basic HTML structure and attributes</h1>
-            <hr>
-            <h2>Tags</h2>
-            <p>tags are the essence of html and they use the ">" symbols</p>
-            <hr>
-            <h2>Structure</h2>
-            <p>In HTML all documents must start with document type declaration "!DOCTYPE html" and then do the sections</p>
-            <p>These are sections that must have an opening and a closing tag and the first one is always "html" and "/html" then goes the head and then the body which are open and closed respectively ex: </p>
-            <img src="htmlstrc.png" alt="structure" style="width: 200px; height: 500;" class = "center">
-            <hr>
-            <h2>Information attributes</h2>
-            <p>In HTML to add information that cannot be hardcoded into the html script it can be added using information attributes</p>
-            <p>Hyperlinks can be added using the "href" attribute by using the "a" tag</p>
-            <p>so can images, and code and other external data can be added using the "src" attribute under the "image" or "script" tag</p>
-            <hr>
-            <h2>Headings and paragraphs</h2>
-            <p>Headings and paragraphs is how HTML websites are structured it is a basic format where the title is displayed and then information follows, this can be divided into sections but ultimately they follow the same structure</p>
-            <p>This is done by using the "h1","h2",etc and "p" tags h for headings which go in order of importance with 1 being the biggest and p for paragraphs</p>
-
-        </div>
-        <div id="css" data-tab-content>
-            <h1>This sector covers all the basics of CSS</h1>
-            <hr>
-            <h2>Stylesheet</h2>
-            <p>CSS stands for "cascading style sheets" and as the name suggests it works by creating a style sheet for the HTML script</p>
-            <p>to link a stylesheet to an HTML document you need to use the "link" tag and refer it as a "stylesheet" under the "rel attribute and then put the file name under the "href" attribute</p>
-            <p>In the CSS file you can design each part of the structure's style such as p for paragraphs, h for headers, etc, to adress them you simply put the name of the tag without any angle brackets and encase the arguments using "{}" and adding the style argument</p>
-            <hr>
-            <h2>Styles</h2>
-            <p>Some of the basic styles of CSS inlcude: color, background-color, font-family, font-size, border and padding, ex:</p>
-            <img src="CSStyles.png" alt="styles" style="width: 600px; height: 800;" class = "center">
-            <hr>
-            <h2>Classes</h2>
-            <p>This is a way of designing the style of HTML classes [will be covered in next sectors] and they start by .classname and then curly brackets as a usual style</p>
-            <p>then you can add styles to your own classes without addressing it every time :] </p>
-        </div>
-        <div id="HTML_2" data-tab-content>
-            <h1>This sector will cover some more advanced stuff of HTML</h1>
-            <hr>
-            <h2>Tables and lists</h2>
-            <p>For tables the tag is "table", first the tags of the levels of the boxes which is "tr",  then the tag for the headings of the columns "th" and for the content "td"</p>
-            <p>For lists it is very simple it starts with the "ul" tag for unnordered or "ol" for ordered and then you add the elements using the "li" tags, [they can be displayed vertically or horizontally]</p>
-            <hr>
-            <h2>Div</h2>
-            <p>The "div" tag is a very important tag in HTML used to segment the website into areas, whatever is placed in a div tag will be treated independently</p>
-            <hr>
-            <h2>Classes</h2>
-            <p>the "class" attribute can be added to tags in order for them to be handled differently, this class attribute can also be linked with CSS and JS to further modify the class independently</p>
-            <p>whatever is encased by the claass tag with the attribute will be part of that class</p>
-            <hr>
-            <h2>JavaScript</h2>
-            <p>To link an HTML document to a javascript file you need to add the tag "script" at the begining and then use the "src" attribute then the filename and finally a defer attribute [preferably]</p>
-
-        </div>
-        <div id="javascript" data-tab-content>
-            <h1>This final sector teaches Javascript "JS" to a basic degree</h1>
-            <hr>
-            <h2>Internal/external JS</h2>
-            <p>The two ways to implement JS in an HTML document is either by internal JS [Script is written in the .html file] or external [script is in a separate file]</p>
-            <p>When using external JS the filename will have to be refered [demonstrated in past sector]</p>
-            <p>When using it internaly you will have to encase the JS in "script" tags</p>
-            <hr>
-            <h2>Elements</h2>
-            <p>Elements work by refereing variables into HTML and need to be refered with the "id" attribute and get given a name</p>
-            <p>In the JS they are refered by using the document.getElementById("example").innerHTML = whatever</p>
-            <hr>
-            <h2>Variables</h2>
-            <p>To declare constant variables you use the "let" or "const" keywords, then declare either strings or numbers</p>
-            <p>To declare non constants you use the "var" keyword</p>
-            <hr>
-            <h2>functions</h2>
-            <p>To declare functions you use the "function" keyword, then you name it and encase any variables in the brackets or leave them empty</p>
-            <p>Functions can return values or not, they work similar to python functions</p>
-            <hr>
-            <h2>Objects</h2>
-            <p>Objects as in other programming languages work in JS and can be created directly without a class by using curly brackets after defining a var</p>
-            <p>Then in the curly brackets you can add the object's attributes by giving it the name and then the value after ":"</p>
-            <hr>
-            <h2>Events</h2>
-            <p>Events are what make a website interactive and there are multiple events such as "onclick" or "onmouseover" and they allow the HTML document to be interactive</p>
-            <p>These event names have to be set as HTML attributes under a tag and when the certain event happens a JS function will be executed</p>
-            <hr>
-            <h2>Example of JS: </h2>
-            <img src="JSexmp.png" alt="styles" style="width: 600px; height: 800;" class = "center">
-        </div>
-    </div>
+    </di
 </body>
 </html>
