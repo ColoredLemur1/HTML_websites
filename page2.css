@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     border: 1px solid black;
-    background-color: lightgray;
+    background-color: #77a8c6;
 }
 
 .tab{
@@ -32,11 +32,6 @@
     height: 1000px;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #77a8c6;
-}
 
 body {
     padding: 0;
