@@ -1,5 +1,6 @@
-
-
+[data-tab-content] {
+    display: none;
+}
 
 .tabs {
     display: flex;
@@ -8,7 +9,7 @@
     margin: 0;
     padding: 0;
     border: 1px solid black;
-    background-color: lightgray;
+    background-color: #fdbe3b;
 }
 
 .tab{
@@ -27,4 +28,41 @@
 .tab-content {
     margin-left: 20px;
     margin-right: 20px;
+    height: 1800px;
+}
+
+.parallax {
+    background-image: url("mountains-scape.jpg");
+  
+
+    min-height: 750px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+   }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid black;
+  }
+
+  p {
+    font-size: 130%;
+    font-family: Verdana;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fdbe3b;
 }

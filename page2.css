@@ -1,3 +1,8 @@
+[data-tab-content] {
+    display: none;
+}
+
+
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -24,4 +29,47 @@
 .tab-content {
     margin-left: 20px;
     margin-right: 20px;
+    height: 1000px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #77a8c6;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #77a8c6;
+}
+
+.parallax {
+    background-image: url("green-trees-mountain-white-sky-daytime.jpg");
+  
+
+    min-height: 750px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+   }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid black;
+  }
+
+p {
+    font-size: 130%;
+    font-family: Verdana;
+    
 }
